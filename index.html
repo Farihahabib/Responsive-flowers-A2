@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive flowers</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <style>
+        @media  screen and  (max-width:576px) {
+            .none{
+                display: none;
+            }
+           .column{
+            flex-direction: column-reverse;
+           }
+        }
+     </style>
+  </head>
+     
+</head>
+<body class="bg-[#F5F8FF] p-0 m-0">
+    <nav class="flex justify-around items-center aligns-center mb-20 max-w-70rem ">
+        <img src="assets/logo.png" alt="">
+        <div >
+            <ul class="flex gap-4 ">
+                <li class="list-none none"><a href="#">Home</a>
+                <li class="text-[#8987A1] none"><a href="#">shop</a>
+                <li class="text-[#8987A1] none "><a href="#">about us</a>
+                <li class="flex gap-2"><img src="assets/shopping-cart.png" alt=""><a href="#">cart ($56)</a>
+        </div>
+         </nav>
+        <div class="flex max-w-8/12 m-auto gap-none column">
+            <div>
+            <h2 class="font-bold text-4xl w-1/2">ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span></h2>
+            <p class=" text-sm">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            </div>
+            <div class=""><img h-100% w-100% src="assets/hero-flower.png" alt=""></div>
+        </div>
+   
+</body>
+</html>
