@@ -6,11 +6,7 @@
     <title>Responsive flowers</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      <style>
-        *{
-            /* margin: 0;
-            padding: 0; */
-            
-        }
+        
         .cards{
             max-width: 70rem;
             display: grid;
@@ -101,9 +97,9 @@
     #email{
         background-color: #ffffff;
         padding-right: 200px;
-        padding-left: 3px;
+        padding-left: 2px;
         padding-top: 1px;
-        padding-bottom: 1px;
+        padding-bottom:5px;
     }   
     .Home{
         display: grid;
@@ -175,7 +171,15 @@
        
        
         @media  screen and  (max-width:576px) {
-   
+   nav> img{
+    height: 40px;
+    margin-left: 0;
+   }
+   nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
             .none{
                 display: none;
 
@@ -205,13 +209,32 @@
             margin: 2px 0;
             
            }
+           .grid{
+            grid-template-areas: "bloom"
+                                  "ana"
+                                  "zabo";
+           }
+           footer{
+            flex-direction: column;
+            margin-left: 15px;
+            gap: 20px;
+           }
+           .Home{
+            margin-left: calc(50% - 480px);
+            display: flex;
+            flex-direction: column;
+            gap:15px
+           }
+           .logos{
+            width: 50%;
+           }
         }
      </style>
   </head>
      
 </head>
 <body class="bg-[#F5F8FF] p-0 m-0">
-    <nav class="flex gap-10 justify-between items-center aligns-center mb-20 max-w-1200 m-auto">
+    <nav class="flex justify-between items-center aligns-center mb-20 max-w-1000 m-auto">
         <img class="ml-30" src="assets/logo.png" alt="">
         <div class="mr-30" >
             <ul class="flex gap-4 ">
@@ -221,18 +244,18 @@
                 <li class="flex gap-2"><img src="assets/shopping-cart.png" alt=""><a href="#">cart ($56)</a>
         </div>
          </nav>
-        <div class="flex max-w-1200 content-center m-auto  column justify-center">
+        <div class="flex max-w-1000 content-center m-auto  column justify-center">
             <div class="mt-29 ml-30">
             <h2 class="font-bold text-4xl w-2/3">ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span></h2>
             <p class=" text-sm ">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
             </div>
            <img class="max-w-570 mr-30" src="assets/hero-flower.png" alt="">
         </div>
-   <section class="max-w-70rem">
+   <section class="max-w-1000">
     <h1 class="text-4xl font-bold text-center mt-20"> <span class="text-[#E95A08]">Our</span> Plants</h1>
     <p class="text-center max-w-150 m-auto mb-7 ">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
    </section>
-   <section class="cards max-w-1200">
+   <section class="cards max-w-1000">
    
     <div class="card ">
         <img src="assets/sample-flower-image.png" alt="">
@@ -294,7 +317,7 @@
    </section>
 
 
-   <section class="lover flex gap-15 m-auto mt-20">
+   <section class="lover max-w-1000 flex gap-15 m-auto mt-40">
     <div>
         
     <img class="w-100 h-100 ml-30" src="assets/flower-store.png" alt="" srcset="">
@@ -312,12 +335,12 @@
 
     
      
-   <section class="deals flex-col justify-center text-center max-w-1200 m-auto mt-20">
+   <section class="deals flex-col justify-center text-center max-w-1000 m-auto mt-40">
     <h2 class="text-3xl font-bold"><span class="text-[#E95A08]">Latest</span> Deals</h2>
     <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
        </section>
 
-    <section class="grid ">
+    <section class="grid mt-40 ">
        <div class=" bloom rounded-2xl">
         <h3>60% Off | Bloom Plant</h3>
          <button ><a class="solid" href="">shop now</a></button>
@@ -336,16 +359,16 @@
     </div> 
     
   </section>
- <section class="join max-w-1200">
+ <section class="join max-w-1000 mt-40">
     <h2>Join the colorful Bunch</h2>
     <div class=" ">
-        <ul class="flex justify-center items-center">
+        <ul class="flex justify-center items-center  ">
         <li><input type="email" name="" id="email" placeholder="Write email"></li>
-        <li><button class="bg-[#E95A08] flex m-auto pt-1 pb-1 ">subscribe</button></li>
+        <li><button class="bg-[#E95A08] flex m-auto pl-10 pr-10  h-7.5 text-[#FFFFFF] font-semibold">subscribe</button></li>
         </ul>
     </div>
  </section>
- <footer class=" flex justify-around mt-15 mb-20">
+ <footer class=" flex max-w-1000 justify-around mt-15 mb-20">
     <div class="faugi w-1/3">
         <img src="assets/logo.png" alt="">
         <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
