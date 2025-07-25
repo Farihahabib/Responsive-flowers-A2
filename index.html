@@ -53,36 +53,75 @@
             font-weight: bold;
             font-size: 0.9rem;
             border-radius: 14px;
+            position: relative;
+            background-position: center;
             /* overflow: hidden; */
         }
+         
+
         .bloom{
             background-image: url("assets/deal-bloom.png");
             grid-area: bloom;
             background-repeat: no-repeat;
             background-size: cover;
           
-
+        }
+        .bloom::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+         border-radius: 14px;
+            z-index: 1;
         }
         .ana{
             background-image: url("assets/deal-ana.png");
        background-size: cover;
+             
             grid-area: ana;
             background-repeat: no-repeat;
+        }
+        .ana::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+         border-radius: 14px;
+            z-index: 1;
         }
        .zabo{
         grid-area: zabo;
         background-image: url("assets/deal-zabo.png");
          background-size: cover;
         background-repeat: no-repeat;
-
+        position: relative;
+     
         
        }
+       .zabo::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+         border-radius: 14px;
+            z-index: 1;
+            color: #ffffff;
+        }
        
       .join{
         background-image: url("assets/news-letter-bg.png");
-        padding:90px;
+        padding:6rem;
         max-width: 1400px;
-        margin-top: 50px;
+        margin-top: 80px;
         margin: auto;
       } 
       .join h2{
@@ -169,33 +208,8 @@
        
        
         @media  screen and  (max-width:576px) {
-  
-            
            
-           /* .grid{
-            grid-template-areas: "bloom"
-                                  "ana"
-                                  "zabo";
-           }
-           footer{
-            flex-direction: column;
-            margin-left: 15px;
-            gap: 20px;
-           }
-           .Home{
-            margin-left: calc(50% - 480px);
-            display: flex;
-            flex-direction: column;
-            gap:15px
-           }
-           .logos{
-            width: 50%;
-           }
-           #email{
-            width: 50px;
-            
-            margin-left: 2px
-           } */ */
+          
             .nav{
                 width: 100%;
                 display: flex;
@@ -215,6 +229,7 @@
             }
             .fresh{
                 margin-left: 10px;
+                margin-right: 10px;
             }
             .fresh h2{
                 width: 100%;
@@ -227,6 +242,10 @@
                grid-template-columns: repeat(2,1fr);
                 margin-left: 0;
                 margin-right: 0;
+             }
+             .plants{
+                margin-left: 10px;
+                margin-right: 10px;
              }
              .lover{
                 flex-direction: column;
@@ -241,11 +260,12 @@
              .flower{
                 width: 100%;
                 height: 80%;
-                margin-left: 5px;
+                margin-left: 40px;
              }
              .content{
                 width: 100%;
-                margin-left: 5px;
+                margin-left: 15px;
+                margin-top: 20px;
              }
                 .content h3{
                     width: 100%;
@@ -262,6 +282,45 @@
             margin-left: 10px;
             margin-right: 10px;
           }
+          /* .join{
+            width: 100%;
+          ;
+           display: flex;
+           flex-direction: column;
+        
+          }
+          .join h2{
+            font-size: 1rem;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            margin-left: 15px;
+          
+        } */
+        footer{
+            flex-direction: column;
+            margin-left: 15px;
+            gap: 20px;
+           }
+           .Home{
+            grid-template-areas: "home"
+                                  "us"
+                                 "blog"
+                                  "f"
+                                  "cont"
+                                  "feat"
+                                   "pri"
+                                 "policy"
+                                  "terms"
+                                   "help";
+           }
+           .logos{
+            width: 50%;
+           }
+            #email{
+            width: 50px;
+            margin-left: 2px
+           } 
         }
      </style>
   </head>
@@ -289,7 +348,7 @@
     <h1 class="text-4xl font-bold text-center mt-20"> <span class="text-[#E95A08]">Our</span> Plants</h1>
     <p class="text-center max-w-150 m-auto mb-7 ">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
    </section>
-    <!-- <section class="cards max-w-1000">
+     <!-- <section class="cards max-w-1000">
    
     <div class="card ">
         <img src="assets/sample-flower-image.png" alt="">
@@ -348,7 +407,7 @@
        </div>
    
      
-   </section>  -->
+   </section>   -->
    
 
    <section class="lover max-w-1000 flex justify-between m-auto mt-40">
@@ -393,7 +452,7 @@
     </div>   
      
    </section>
- <!-- <section class="join max-w-1000 mt-40">
+  <!-- <section class="join max-w-1000 mt-40">
     <h2>Join the colorful Bunch</h2>
     <div class="join-btn max-w-570 ">
         <ul class="flex justify-center items-center  ">
@@ -401,8 +460,8 @@
         <li><button class="bg-[#E95A08] flex m-auto pl-10 pr-10  h-7.5 text-[#FFFFFF] font-semibold">subscribe</button></li>
         </ul>
     </div>
- </section>
- <footer class=" flex max-w-1000 justify-around mt-15 mb-20">
+ </section>  -->
+  <footer class=" flex max-w-1000 justify-around mt-15 mb-20">
     <div class="faugi w-1/3">
         <img src="assets/logo.png" alt="">
         <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
@@ -427,6 +486,6 @@
         <img class="fk" src="assets/icon-facebook.png" alt="">
         <img class="you" src="assets/icon-youtube.png" alt="">
     </div>
- </footer>  */
+ </footer> 
 </body>
 </html>
