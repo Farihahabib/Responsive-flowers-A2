@@ -30,8 +30,8 @@
         .btn{
             background-color: #E95A08;
              margin: auto;
-             padding: 0 5.38rem;
-
+             text-align: center;
+             width: 98%;
         }
         .grid{
             max-width: 1050px;
@@ -145,8 +145,6 @@
 .grid-img{
     display: grid;
     justify-items: center;
-   
-  
     gap: 15px;
     grid-template-areas: "li tw fk you";
 }
@@ -222,12 +220,32 @@
                 margin-right: 10px;
             }
             .cards{
-                grid-template-columns: repeat(2,1fr);
+               grid-template-columns: repeat(2,1fr);
                 margin-left: 0;
                 margin-right: 0;
-                
-              
-            }
+             }
+             .lover{
+                flex-direction: column;
+                margin-left: 5px;
+                width: 80%;
+             }
+             
+             .trust{
+                width: opx;
+                height: 0px;
+             }
+             .flower{
+                width: 100%;
+                height: 80%;
+                margin-left: 5px;
+             }
+             .content{
+                width: 100%;
+                margin-left: 5px;
+             }
+                .content h3{
+                    width: 100%;
+                }
           
         }
      </style>
@@ -256,7 +274,7 @@
     <h1 class="text-4xl font-bold text-center mt-20"> <span class="text-[#E95A08]">Our</span> Plants</h1>
     <p class="text-center max-w-150 m-auto mb-7 ">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
    </section>
-    <section class="cards max-w-1000">
+    <!-- <section class="cards max-w-1000">
    
     <div class="card ">
         <img src="assets/sample-flower-image.png" alt="">
@@ -315,15 +333,15 @@
        </div>
    
      
-   </section> 
+   </section>  -->
    
 
-   <!-- <section class="lover max-w-1000 flex justify-between m-auto mt-40">
-    <div>
+   <section class="lover max-w-1000 flex justify-between m-auto mt-40">
+    <div class="imgs">
         
     <img class="flower w-40% h-100 ml-30  " src="assets/flower-store.png" alt="" srcset="">
-<img class="h-50 w-50 ml-90 -mt-125 none motion-safe:animate-spin" src="assets/trusted-badge.png" alt=""></div>
-    <div class="w-1/2 mr-20">
+<img class="h-50 w-50 ml-90 -mt-125 trust none motion-safe:animate-spin" src="assets/trusted-badge.png" alt=""></div>
+    <div class="w-1/2 mr-20 content">
         <h3 class="font-bold text-3xl w-1/2">Flower & Plants Lover</h3>
         <ull class="w-2/3">
             <li class="text-[#8987A1] mt-9">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
@@ -331,17 +349,17 @@
             <li class="text-[#8987A1] mt-9">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
         </ul>
     </div>
-   </section> -->
+   </section>
 
 
     
      
-   <!-- <section class="deals flex-col justify-center text-center max-w-1000 m-auto mt-40">
+   <section class="deals flex-col justify-center text-center max-w-1000 m-auto mt-40">
     <h2 class="text-3xl font-bold"><span class="text-[#E95A08]">Latest</span> Deals</h2>
     <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-       </section>
+       </section> 
 
-    <section class="grid mt-40 ">
+    <!-- <section class="grid mt-40 ">
        <div class=" bloom rounded-2xl">
         <h3>60% Off | Bloom Plant</h3>
          <button ><a class="solid" href="">shop now</a></button>
@@ -357,7 +375,7 @@
         <h3>25% off  | Zabo plant</h3>
       
      <button class="bottom-1"><a href="">shop now</a></button>
-    </div>  -->
+    </div>  --> -->
      
   <!-- </section> -->
  <!-- <section class="join max-w-1000 mt-40">
