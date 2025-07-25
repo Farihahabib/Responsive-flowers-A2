@@ -5,7 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive flowers</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
      <style>
+        
+.work-sans-normal {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
         .cards{
             display: grid;
             grid-template-columns: repeat(4,1fr);
@@ -32,6 +42,8 @@
              margin: auto;
              text-align: center;
              width: 98%;
+             color: #ffffff;
+             font-weight: 500;
         }
         .grid{
             max-width: 1050px;
@@ -352,10 +364,10 @@
             
         }
      </style>
-  </head>
+  
      
 </head>
-<body class="bg-[#F5F8FF] p-0 m-0">
+<body class="bg-[#F5F8FF] p-0 m-0 work-sans-normal">
     <nav class="flex nav justify-between items-center aligns-center mb-20 max-w-1000 m-auto">
         <img class="ml-30" src="assets/logo.png" alt="">
         <div class="mr-30" >
@@ -369,13 +381,13 @@
          <section class="flex fresh-flow mx-auto max-w-1000 justify-between justify-center">
             <div class="mt-29 ml-30 fresh ">
             <h2 class="font-bold text-4xl w-2/3">ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span></h2>
-            <p class=" text-sm ">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            <p class=" text-sm text-gray-600 ">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
             </div>
            <img class="max-w-570 mr-30" src="assets/hero-flower.png" alt="">
         </section>
    <section class="max-w-1000 plants">
     <h1 class="text-4xl font-bold text-center mt-20"> <span class="text-[#E95A08]">Our</span> Plants</h1>
-    <p class="text-center max-w-150 m-auto mb-7 ">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    <p class="text-center max-w-150 m-auto mb-7 text-gray-600 ">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
    </section>
      <section class="cards max-w-1000">
    
@@ -390,7 +402,7 @@
         <img src="assets/sample-flower-image.png" alt="">
         <p class="">Lily Blossom</p>
         <h4 class="">20 USD</h4>
-        <button class="btn">ADD TO CART</button>
+        <button class="btn text-{#ffffff}">ADD TO CART</button>
        </div>
    
     <div class="card ">
@@ -447,9 +459,9 @@
     <div class="w-1/2 mr-20 content">
         <h3 class="font-bold text-3xl w-1/2">Flower & Plants Lover</h3>
         <ull class="w-2/3">
-            <li class="text-[#8987A1] mt-9">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-            <li class="text-[#8987A1] mt-9">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
-            <li class="text-[#8987A1] mt-9">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+            <li class=" mt-9 text-gray-600">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+            <li class="text-gray-600 mt-9">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
+            <li class="text-gray-600 mt-9">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</li>
         </ul>
     </div>
    </section>
@@ -459,7 +471,7 @@
      
    <section class="deals flex-col justify-center text-center max-w-1000 m-auto mt-40">
     <h2 class="text-3xl font-bold"><span class="text-[#E95A08]">Latest</span> Deals</h2>
-    <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+    <p class="text-gray-600">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
        </section> 
 
     <section class="grid mt-40 ">
@@ -493,10 +505,10 @@
   <footer class=" flex max-w-1000 justify-around mt-15 mb-20">
     <div class="faugi w-1/3">
         <img src="assets/logo.png" alt="">
-        <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+        <p class="text-gray-600">Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
     </div>
     <div >
-        <ul class="Home">
+        <ul class="Home text-gray-600">
             <li class="home">Home</li>
             <li class="us">About Us</li>
             <li class="blog">Blog</li>
