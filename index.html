@@ -120,7 +120,7 @@
       .join{
         background-image: url("assets/news-letter-bg.png");
         padding:6rem;
-        max-width: 1400px;
+        max-width: 1200px;
         margin-top: 80px;
         margin: auto;
       } 
@@ -135,10 +135,11 @@
        
     #email{
         background-color: #ffffff;
-        padding-right: 10em;
+        padding-right: 10rem;
         padding-left: 2px;
         padding-top: 1px;
         padding-bottom:5px;
+       
     }   
     .Home{
         display: grid;
@@ -288,21 +289,38 @@
             margin-left: 10px;
             margin-right: 10px;
           }
-          /* .join{
-            width: 100%;
-          ;
+          .join{
+         
+           max-width: calc(100% - 1px);
+           padding: 20px;
+           padding-right: 0%;
+          background-position: center;
            display: flex;
            flex-direction: column;
         
           }
           .join h2{
+           margin-top: 10px;
+              margin-bottom: 0;
             font-size: 1rem;
-            padding: 50px;
+           align-items: center;
             display: flex;
-            justify-content: center;
-            margin-left: 15px;
-          
-        } */
+            text-align: center;
+            padding: 20px; 
+        }
+        .join ul{
+            margin-top: 0;
+            margin-bottom: 60px;
+        
+        }
+        #email{
+           
+            padding-right: 15px;
+           } 
+           .button{
+            padding-left: 7px;
+            padding-right: 7px;
+           }
         footer{
             flex-direction: column;
             margin-left: 15px;
@@ -328,10 +346,7 @@
            .logos{
             width: 50%;
            }
-            #email{
-            width: 50px;
-            margin-left: 2px
-           } 
+            
         }
      </style>
   </head>
@@ -463,15 +478,15 @@
     </div>   
      
    </section>
-  <!-- <section class="join max-w-1000 mt-40">
+  <section class="join max-w-1000 mt-40">
     <h2>Join the colorful Bunch</h2>
     <div class="join-btn max-w-570 ">
         <ul class="flex justify-center items-center  ">
         <li><input type="email" name="" id="email" placeholder="Write email"></li>
-        <li><button class="bg-[#E95A08] flex m-auto pl-10 pr-10  h-7.5 text-[#FFFFFF] font-semibold">subscribe</button></li>
+        <li><button class="bg-[#E95A08] button flex m-auto pl-10 pr-10  h-7.5 text-[#FFFFFF] font-semibold">subscribe</button></li>
         </ul>
     </div>
- </section>  -->
+ </section> 
   <footer class=" flex max-w-1000 justify-around mt-15 mb-20">
     <div class="faugi w-1/3">
         <img src="assets/logo.png" alt="">
